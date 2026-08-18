@@ -1,38 +1,34 @@
-# Presupuestos OCR — Versión 2
+# Presupuestos OCR — Versión 2.1
 
-Aplicación web para leer presupuestos escaneados, detectar datos y tablas, corregirlos manualmente y exportarlos a Excel.
+Versión preparada para tres formatos:
 
-## Incluye
-- PDF/JPG/PNG.
-- PDF de varias páginas.
-- OCR español/inglés.
-- Detección de tablas con OpenCV.
-- Edición manual en pantalla.
-- Vista previa y OCR bruto.
-- Exportación Excel.
-- Archivos preparados para Streamlit Community Cloud.
-- Dockerfile para otros servicios cloud.
+1. Electro System
+2. Electropar
+3. Compañía Comercial del Paraguay
 
-## Ejecutar localmente
-1. Instalar Python 3.11.
-2. Instalar Tesseract OCR y el idioma español.
-3. Ejecutar `pip install -r requirements.txt`.
-4. Ejecutar `streamlit run app.py`.
+## Mejoras
+- detección automática del proveedor;
+- lectura directa del texto y coordenadas cuando el PDF es nativo;
+- OCR como respaldo para escaneos;
+- salida de productos normalizada;
+- cantidades y precios como números de Excel cuando es posible;
+- validación Cantidad × Precio Unitario = Precio Total;
+- edición manual antes de exportar;
+- exportación a Excel.
 
-## Publicar con Streamlit Community Cloud
-1. Crear un repositorio en GitHub.
-2. Subir todo el contenido de esta carpeta.
-3. Crear una app nueva en Streamlit Community Cloud.
-4. Elegir el repositorio y `app.py`.
-5. Publicar.
+## Actualizar la aplicación existente en GitHub
 
-`packages.txt` instala Tesseract en el servidor.
+La forma más fácil:
+1. Abrí tu repositorio `presupuesto-ocr`.
+2. Reemplazá `app.py` por el `app.py` de esta carpeta.
+3. Reemplazá también `requirements.txt`.
+4. Confirmá los cambios.
+5. Streamlit detectará el cambio y reconstruirá la aplicación.
 
-## Próxima evolución
-- perfiles por proveedor;
-- tablas sin bordes;
-- corrección de perspectiva;
-- confianza OCR por celda;
-- validación cantidad × precio;
-- comparación entre presupuestos;
-- usuarios, historial y base de datos.
+También podés subir todos los archivos del ZIP reemplazando los anteriores.
+
+## Archivos importantes
+- app.py
+- requirements.txt
+- packages.txt
+- .streamlit/config.toml

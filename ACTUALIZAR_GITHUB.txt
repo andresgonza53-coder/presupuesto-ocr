@@ -1,0 +1,15 @@
+ACTUALIZAR TU APP EN GITHUB - V2.1
+
+1. Descomprimí este ZIP.
+2. Entrá en GitHub al repositorio: presupuesto-ocr
+3. Abrí el archivo app.py.
+4. Usá el menú del archivo para eliminarlo o reemplazarlo.
+5. Subí el nuevo app.py de este ZIP.
+6. Reemplazá también requirements.txt y packages.txt si GitHub lo solicita.
+7. Guardá/Confirmá (Commit changes).
+8. Volvé a tu página de Streamlit.
+9. Esperá mientras Streamlit vuelve a desplegar la aplicación.
+
+IMPORTANTE:
+No necesitás crear una aplicación nueva de Streamlit.
+La misma URL seguirá funcionando.
