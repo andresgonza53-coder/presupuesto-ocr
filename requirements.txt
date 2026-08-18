@@ -1,0 +1,7 @@
+streamlit>=1.40
+opencv-python-headless>=4.10
+pytesseract>=0.3.13
+pandas>=2.2
+openpyxl>=3.1
+numpy>=1.26
+PyMuPDF>=1.24
